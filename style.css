@@ -1,0 +1,803 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Roboto;
+    line-height: 1.6;
+    background-color: #FFBB1F;
+}
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #FFBB1F;
+    color: white;
+    height: 90px;
+}
+.lines {
+border-left: thick solid #ff0000;
+    height: 100%;
+    width: 10px;
+    position: absolute;
+    left: 118px;
+}
+.lines1 {
+border-left: thick solid #ff0000;
+    height: 100%;
+    position: absolute;
+        left: 1318px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 10%;
+    height: 100%; /* Ensures container also fills the height */
+}
+h1 {
+    padding-left: 5%;
+    font-family: Raleway;
+}
+h3 {
+    font-family: Raleway;
+}
+.Logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 80px; 
+    height: auto;
+    object-fit: contain;
+}
+.lapville {
+    color: black;
+    font-family: Comfortaa;
+    font-size: 60px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav {
+    height: 100%; /* Ensures nav fills the height */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Full height of the header */
+    gap: 30px;
+    font-family: Nunito;
+}
+
+nav ul li {
+    height: 100%; /* Full height of the header */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    background-color: #FCAB1E;
+        transition: background-color 0.3s, color 0.3s;
+    padding: 0 20px; /* Adjust padding for spacing */
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 1000;
+    cursor: pointer;
+}
+nav ul li.active {
+    background-color: #FFC954;
+    border-radius: 5px;
+}
+
+.content-section {
+    display: none;
+    padding: 20px;
+}
+
+.content-section:not(.hidden) {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background: #000; /* Background color for better visibility */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* 4 slides * 100% */
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slovo, .about, .about1, .about2 {
+    position: absolute;
+    color: white;
+    font-family: Nunito, sans-serif;
+    z-index: 1;
+    margin: 0;
+    padding: 0 10%;
+    max-width: 270px;
+}
+
+.slovo {
+    top: 20%;
+    font-size: 40px;
+    font-weight: 700;
+    color: #FCAB1E;
+}
+.about2 {
+    top: 15%;
+    font-size: 23px;
+    font-weight: 600;
+}
+.about1 {
+    top: 10%;
+    font-size: 23px;
+    font-weight: 600;
+}
+.about {
+    top: 30%;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: white; /* Change to white when active */
+}
+.line {
+    background-color: black;
+    width: 130px;
+    height: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.icon {
+    width: 1.875rem; 
+    height: auto;
+    padding: 0.3125rem; 
+}
+.container1 {
+    width: 80%;
+    margin: 0 auto;
+}
+section {
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.image-content {
+    width: 75%;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-content1, .text-content2, .text-content3 {
+    width: 93%;
+    margin-left: 150px;
+}
+.text-content3 {
+display: flex;
+flex-direction: column;
+align-items: end;
+padding-right: 50px;
+}
+.text-content4 {
+display: flex;
+flex-direction: column;
+align-items: start;
+padding-right: 100px;
+width: 93%;
+}
+.description {
+    text-align: left;
+    width: 85%; 
+    text-align: justify;
+}
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 90px;
+}
+.content-wrapper1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 90px;
+}
+.title, .titles {
+    text-align: center;
+    font-family: Nunito;
+    padding-left: 0;
+    font-weight: 800;
+    margin-bottom: -10px;
+}
+.image {
+    border-radius: 20px;
+    border: 14px solid #FCAB1E;
+}
+
+h3 {
+    width: 70%;
+    text-align: end;
+    font-weight: 600;
+    font-family: Nunito;
+    margin-bottom: -10px;
+}
+.img {
+    border: none;
+    width: 95%;
+}
+.paw {
+    position: relative;
+    width: 280px;
+    height: auto;
+    padding-left: 20px;
+}
+.paw1 {
+    position: relative;
+    width: 280px;
+    height: auto;
+    padding-left: 20px;
+    transform: rotate(45deg);
+}
+.paw img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.number {
+    position: absolute;
+    top: 27%;
+    left: 59%;
+    transform: translate(-50%, -50%) rotate(329deg);
+    color: white;
+    font-size: 40px;
+    font-family: Rubik One;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.friend {
+    text-align: center;
+    font-weight: 700;
+    font-family: Nunito;
+    padding-top: 50px;
+    color: black;
+    padding-right: 9px;
+}
+.button {
+        background-color: #FCAB1E;
+    color: black;
+    font-family: Nunito;
+    font-weight: 700;
+        width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+.bttn {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.button:hover {
+    background-color: #ec9600;
+}
+.req {
+    text-align: center;
+    font-family: Nunito;
+}
+.sber {
+    background-color: #FFC954;
+    width: 520px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+.card1 {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: Nunito;
+    letter-spacing: 2px;
+}
+footer {
+    background-color: #000000;
+    color: white;
+    padding-top: 0.625rem; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    font-family: Nunito;
+    padding: 0 10%;
+}
+    .text-content5 {
+        align-items: start; 
+        padding-right: 0px; 
+        margin-left: 80px;
+display: flex;
+flex-direction: column;
+    }
+.tin {
+    width: 470px;
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+}
+.network {
+    display: flex;
+    align-items: center;
+}
+.networks {
+    padding-left: 50px;
+}
+.info {
+    padding-right: 2.5rem; 
+    display: flex;
+    justify-content: center;
+}
+.info1 {
+    display: flex;
+    margin-left: auto;
+    flex-direction: column;
+}
+.infocompany {
+    padding-left: 2.5rem;
+    font-size: 17px;
+}
+.logotip {
+    width: 600px;
+    height: auto;
+}
+.money {
+    width: 100%;
+    text-align: center;
+}
+.story {
+    width: 75%;
+    text-align: justify;
+}
+@media (max-width: 1240px) {
+    .sber {
+        width: 410px;
+    }
+    .tin {
+        width: 360px;
+    }
+    .lapville {
+        font-size: 50px;
+    }
+}
+@media (max-width: 1150px) {
+    .sber {
+        width: 360px;
+    }
+    .tin {
+        width: 310px;
+    }
+    .lapville {
+        font-size: 45px;
+    }
+    header {
+        height: 70px;
+    }
+    .logo {
+        max-width: 70px;
+    }
+    .slovo {
+        font-size: 22px;
+        top: 22%;
+    }
+    .about, .about1 {
+        font-size: 18px;
+    }
+    .about1 {
+        top: 15%;
+    }
+    .container {
+        padding: 0 8%;
+    }
+    .text-content1, .text-content2, .text-content3, .text-content4 {
+       width: 100%;
+       margin-left: 90px;
+       font-size: 14px;
+    }
+    .text-content4 {
+        padding-right: 0;
+        margin-left: 0;
+    }
+    h3 {
+      width: 95%;
+    }
+    nav ul {
+        gap: 15px;
+    }
+    .paw, .paw1 {
+        width: 200px;
+        padding-left: 0;
+    }
+    nav ul li {
+        padding: 0 10px;
+    }
+        nav ul li a{
+        font-size: 15px;
+    }
+    .number {
+        left: 54%;
+        font-size: 30px;
+    }
+}
+@media (max-width: 1000px) {
+       .text-content1, .text-content3, .text-content4 {
+       width: 100%;
+       font-size: 12px;
+       margin-right: 50px;
+    } 
+    .text-content1{
+        margin-left: 0;
+    }
+    .text-content3 {
+        margin-right: 0;
+    }
+    .text-content2 {
+        font-size: 12px;
+    }
+    .paw{
+        width: 180px;
+    }
+    .number {
+        font-size: 25px;
+    }
+    .sber {
+        width: 300px;
+    }
+    .tin {
+        width: 250px;
+    }
+    .content-wrapper1 {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .logotip {
+        width: 500px;
+    }
+}
+@media (max-width: 840px) {
+    .logo {
+        max-width: 60px;
+    }
+    .lapville {
+        font-size: 35px;
+    }
+    .container {
+        padding: 0 6%;
+    }
+    footer {
+        padding: 0 6%;
+    }
+    .infocompany {
+        font-size: 12px;
+    }
+    .soc {
+        font-size: 12px;
+    }
+    .button {
+        width: 110px;
+        height: 40px;
+    }
+    .card1 {
+        font-size: 20px;
+    }
+    nav ul li {
+        padding: 0 7px;
+    }
+    header {
+        height: 65px;
+    }
+    .sber {
+        width: 250px;
+    }
+    .tin {
+        width: 200px;
+    }
+    .image-content {
+        width: 100%;
+    }
+    .image {
+        border: 8px solid #FCAB1E;
+    }
+    .story {
+        width: 85%;
+    }
+}
+@media (max-width: 710px) {
+    header {
+        height: 60px;
+    }
+    .logo {
+        max-width: 55px;
+    }
+    .container {
+        padding: 0;
+    }
+    .lapville {
+        font-size: 30px;
+    }
+    nav ul li {
+        padding: 0 4px;
+    }
+    nav ul li a {
+        font-size: 13px;
+    }
+        .about, .about1, .about2 {
+        font-size: 15px;
+    }
+    .about {
+        top: 32%;
+    }
+    .slovo {
+        font-size: 19px;
+    }
+    .number {
+        font-size: 22px;
+        left: 53%;
+        top: 33%;
+    }
+    .story {
+        width: 95%;
+    }
+    h3 {
+        width: 100%;
+    }
+    .text-content2 {
+        margin-left: 40px;
+    }
+    .text-content1 {
+        margin-right: 30px;
+    }
+    .container1 {
+        width: 100%;
+    }
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+    .friend {
+        font-size: 18px;
+    }
+    .line {
+        width: 100px;
+        height: 6px;
+    }
+}
+@media (max-width: 540px) {
+    .logo {
+        max-width: 40px;
+    }
+    nav ul li a {
+        font-size: 10px;
+    }
+    .lapville {
+        padding-left: 10px;
+        font-size: 25px;
+    }
+    header {
+        height: 50px;
+    }
+        .about, .about1, .about2 {
+        font-size: 11px;
+        max-width: 170px;
+    }
+    .slovo {
+        font-size: 15px;
+    }
+    .line {
+        margin-top: 50px;
+        width: 80px;
+        height: 5px;
+    }
+    .icon {
+        width: 24px;
+    }
+    .networks {
+        padding-left: 20px;
+    }
+    footer {
+        padding: 0;
+    }
+    nav ul {
+        gap: 8px;
+    }
+    .soc {
+        font-size: 10px;
+    }
+    .infocompany {
+        font-size: 10px;
+        padding-left: 0;
+    }
+    .text-content3, .text-content4 {
+        font-size: 10px ;
+    }
+    .text-content3 {
+        padding-right: 30px;
+    }
+    .money {
+        font-size: 12px;
+    }
+    .sber {
+        width: 200px;
+    }
+    .tin {
+        width: 150px;
+    }
+    .card1 {
+        font-size: 15px;
+    }
+    .logotip {
+        width: 350px;
+    }
+    .story {
+        width: 100%;
+    }
+    .button {
+        width: 90px;
+        font-size: 11px;
+    }
+        .description {
+        width: 100%;
+    }
+}
+@media (max-width: 413px) {
+    header {
+        height: 40px;
+    }
+    .logo {
+        max-width: 35px;
+    }
+    nav ul li a {
+        font-size: 7px;
+    }
+    nav ul li {
+        padding: 0 2px;
+    }
+    .lapville {
+        padding-left: 0;
+        font-size: 21px;
+    }
+    .text-content3, .text-content4 {
+        font-size: 8px;
+    }
+    .slovo {
+        font-size: 10px;
+    }
+    .about, .about1, .about2 {
+        font-size: 8px;
+    }
+    .dot {
+        width: 6px;
+        height: 6px;
+    }
+    .friend {
+        font-size: 13px;
+    }
+    .number {
+        font-size: 16px;
+    }
+    .text-content1, .text-content2, .text-content3, .text-content4 {
+        font-size: 8px;
+    }
+    .paw, .paw1 {
+        width: 140px;
+    }
+    .icon {
+        width: 20px;
+    }
+    .networks {
+        padding-left: 0;
+    }
+    .soc {
+        font-size: 8px;
+    }
+    .infocompany {
+        font-size: 8px;
+    }
+    .content-section {
+        padding: 0;
+    }
+    .button {
+        width: 80px;
+        font-size: 9px;
+    }
+    .text-content3 {
+        padding-right: 10px;
+    }
+    .sber {
+        width: 130px;
+        height: 70px;
+        margin-top: 20px;
+    }
+    .tin {
+        width: 110px;
+    }
+    .card1 {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    .text-content4 {
+        padding-left: 20px;
+    }
+    .logotip {
+        width: 300px;
+    }
+}
