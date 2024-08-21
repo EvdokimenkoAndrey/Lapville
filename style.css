@@ -46,7 +46,7 @@ border-left: thick solid #ff0000;
     align-items: center;
     width: 100%;
     padding: 0 10%;
-    height: 100%; /* Ensures container also fills the height */
+    height: 100%; 
 }
 h1 {
     padding-left: 5%;
@@ -76,7 +76,7 @@ h3 {
 }
 
 nav {
-    height: 100%; /* Ensures nav fills the height */
+    height: 100%;
 }
 
 nav ul {
@@ -84,19 +84,19 @@ nav ul {
     display: flex;
     margin: 0;
     padding: 0;
-    height: 100%; /* Full height of the header */
+    height: 100%; 
     gap: 30px;
     font-family: Nunito;
 }
 
 nav ul li {
-    height: 100%; /* Full height of the header */
+    height: 100%; 
     display: flex;
-    align-items: center; /* Center text vertically */
-    justify-content: center; /* Center text horizontally */
+    align-items: center; 
+    justify-content: center; 
     background-color: #FCAB1E;
         transition: background-color 0.3s, color 0.3s;
-    padding: 0 20px; /* Adjust padding for spacing */
+    padding: 0 20px; 
     cursor: pointer;
 }
 
@@ -129,13 +129,13 @@ nav ul li.active {
     max-width: 100%;
     margin: auto;
     overflow: hidden;
-    background: #000; /* Background color for better visibility */
+    background: #000; 
 }
 
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 100%; /* 4 slides * 100% */
+    width: 100%;
 }
 
 .slide {
