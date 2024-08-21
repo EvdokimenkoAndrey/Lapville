@@ -321,13 +321,13 @@ h3 {
 
 .number {
     position: absolute;
-    top: 28%;
-    left: 59%;
+    top: 30%;
+    left: 60%;
     transform: translate(-50%, -50%) rotate(329deg);
     color: white;
     font-size: 40px;
     font-family: Rubik One;
-    font-weight: bold;
+    font-weight: 300;
     pointer-events: none;
 }
 
