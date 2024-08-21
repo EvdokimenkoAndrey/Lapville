@@ -193,7 +193,7 @@ img {
 }
 
 .dot.active {
-    background-color: white; /* Change to white when active */
+    background-color: white;
 }
 .line {
     background-color: black;
@@ -314,7 +314,7 @@ h3 {
 
 .number {
     position: absolute;
-    top: 27%;
+    top: 28%;
     left: 59%;
     transform: translate(-50%, -50%) rotate(329deg);
     color: white;
