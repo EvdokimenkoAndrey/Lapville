@@ -2,7 +2,14 @@
     font-family: "Nunito";
     src: url("fonts/Nunito-Regular.ttf");
 }
-
+@font-face {
+    font-family: "Comfortaa";
+    src: url("fonts/Comfortaa.ttf");
+}
+@font-face {
+    font-family: "Rubik One";
+    src: url("fonts/RubikOne-Regular.ttf");
+}
 body {
     margin: 0;
     padding: 0;
